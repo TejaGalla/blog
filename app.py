@@ -15,6 +15,10 @@ DB_CONFIG = {
     "database": "flaskblog"
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41863f5696b2d65d1ac435bbd46fbf672b18e403
 def get_connection():
     return mysql.connector.connect(**DB_CONFIG)
 
@@ -234,4 +238,8 @@ def updatepost(id):
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    app.run(debug=True)
+>>>>>>> 41863f5696b2d65d1ac435bbd46fbf672b18e403
