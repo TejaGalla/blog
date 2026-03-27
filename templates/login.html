@@ -1,14 +1,26 @@
-{% extends 'homepage.html' %}
-{% block content %}
-    <form method="POST" action="">
-        <img src="C:\Users\admin\Desktop\pspk.jfif"alt="">
-        <ol start="" type="a"></ol>
-        <label for="">username</label>
-        <input type="text" name="username" placeholder="Enter name">
-        <label for="">password</label>
-        <input name="password" type="password" placeholder="Enter password">
-        <button>submit</button>
-        <a href="http://www.google.com">click</a>
-    </form>
-{% endblock %}
-    
+{% include 'navbar.html' %}
+
+<div class="container mt-5" style="max-width: 500px;">
+    <div class="card shadow">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Login</h2>
+            <form method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
